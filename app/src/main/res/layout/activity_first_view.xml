@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    android:padding="50dp"
+    android:background="#fff"
+    tools:context=".FirstView">
+
+    <ProgressBar
+        android:id="@+id/firstProgressBarId"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        ></ProgressBar>
+
+    <ImageView
+        android:layout_weight="4.5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:src="@drawable/icon"
+        android:layout_gravity="center"
+
+        ></ImageView>
+    <TextView
+        android:gravity="center"
+        android:layout_weight=".50"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="A product of"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:textAlignment="center"
+        android:textColor="#FA0606"
+        ></TextView>
+    <ImageView
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:src="@drawable/company"
+        ></ImageView>
+
+</LinearLayout>
